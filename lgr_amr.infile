@@ -1,0 +1,26 @@
+# LGR AMR infile, comments are marked with #
+# writing mode, remotely for writng to remote host and locally or locally for local write only
+remotely
+# remote host
+haboob.atmosp.physics.utoronto.ca
+# port number
+2222
+# user name @ remote host
+gta-emissions
+# logging directory on remote host
+/home/atmosp.physics.utoronto.ca/public_html/GTA-Emissions/LiveMaps
+# name of file where plotting data is storred, on remote host file name is this plus ".txt" and on local machine file name
+# is this plus the current data "_YYYY-MM-DD"
+datasource
+# log of raw data for both istruments, files are these names plus "_YYYY-MM-DD"
+./local_log/raw_data/LGR_log
+./local_log/raw_data/AMR_log
+# location of serial ports, leave blank line if not using an instrument
+#AMR
+COM4
+#LGR
+COM6
+# averaging time for data writen to plotting files, in seconds
+10
+# how often to attempt to write to the remote host in seconds
+30

@@ -1,0 +1,1499 @@
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 15.5, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 15.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 14.9, nan, nan, 1001.2, nan
+nan, nan, nan, 14.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 14.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 14.7, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 14.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 14.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 14.7, nan, nan, 1001.2, nan
+nan, nan, nan, 14.7, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 14.7, nan, nan, 1001.2, nan
+nan, nan, nan, 14.7, nan, nan, 1001.2, nan
+nan, nan, nan, 14.7, nan, nan, 1001.1000000000001, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 15.6, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 15.6, nan, nan, 1001.2, nan
+nan, nan, nan, 15.6, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 15.6, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 15.6, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 15.6, nan, nan, 1001.4000000000001, nan
+nan, nan, nan, 15.6, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 15.6, nan, nan, 1001.4000000000001, nan
+nan, nan, nan, 15.6, nan, nan, 1001.2, nan
+nan, nan, nan, 15.6, nan, nan, 1001.2, nan
+nan, nan, nan, 15.6, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 15.6, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 15.6, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 15.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 15.7, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 15.7, nan, nan, 1001.2, nan
+nan, nan, nan, 15.7, nan, nan, 1001.2, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 15.9, nan, nan, 1001.2, nan
+nan, nan, nan, 15.9, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 15.9, nan, nan, 1001.2, nan
+nan, nan, nan, 15.9, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 15.9, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.0, nan, nan, 1001.2, nan
+nan, nan, nan, 16.0, nan, nan, 1001.2, nan
+nan, nan, nan, 16.0, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.0, nan, nan, 1001.2, nan
+nan, nan, nan, 16.0, nan, nan, 1001.2, nan
+nan, nan, nan, 16.0, nan, nan, 1001.2, nan
+nan, nan, nan, 16.0, nan, nan, 1001.2, nan
+nan, nan, nan, 16.0, nan, nan, 1001.2, nan
+nan, nan, nan, 16.0, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.1, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.1, nan, nan, 1001.2, nan
+nan, nan, nan, 16.1, nan, nan, 1001.2, nan
+nan, nan, nan, 16.1, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.1, nan, nan, 1001.4000000000001, nan
+nan, nan, nan, 16.1, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.1, nan, nan, 1001.2, nan
+nan, nan, nan, 16.1, nan, nan, 1001.2, nan
+nan, nan, nan, 16.1, nan, nan, 1001.2, nan
+nan, nan, nan, 16.1, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.1, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.1, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.1, nan, nan, 1001.2, nan
+nan, nan, nan, 16.1, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.1, nan, nan, 1001.2, nan
+nan, nan, nan, 16.1, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.1, nan, nan, 1001.2, nan
+nan, nan, nan, 16.1, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.1, nan, nan, 1001.2, nan
+nan, nan, nan, 16.1, nan, nan, 1001.4000000000001, nan
+nan, nan, nan, 16.1, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.1, nan, nan, 1001.2, nan
+nan, nan, nan, 16.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.1, nan, nan, 1001.4000000000001, nan
+nan, nan, nan, 16.2, nan, nan, 1001.2, nan
+nan, nan, nan, 16.2, nan, nan, 1001.2, nan
+nan, nan, nan, 16.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.2, nan, nan, 1001.2, nan
+nan, nan, nan, 16.2, nan, nan, 1001.2, nan
+nan, nan, nan, 16.2, nan, nan, 1001.2, nan
+nan, nan, nan, 16.2, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.2, nan, nan, 1001.2, nan
+nan, nan, nan, 16.2, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.2, nan, nan, 1001.2, nan
+nan, nan, nan, 16.2, nan, nan, 1001.2, nan
+nan, nan, nan, 16.2, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.2, nan, nan, 1001.2, nan
+nan, nan, nan, 16.3, nan, nan, 1001.2, nan
+nan, nan, nan, 16.3, nan, nan, 1001.2, nan
+nan, nan, nan, 16.3, nan, nan, 1001.2, nan
+nan, nan, nan, 16.3, nan, nan, 1001.2, nan
+nan, nan, nan, 16.3, nan, nan, 1001.2, nan
+nan, nan, nan, 16.3, nan, nan, 1001.2, nan
+nan, nan, nan, 16.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.3, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.3, nan, nan, 1001.2, nan
+nan, nan, nan, 16.3, nan, nan, 1001.2, nan
+nan, nan, nan, 16.4, nan, nan, 1001.2, nan
+nan, nan, nan, 16.4, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.4, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.4, nan, nan, 1001.2, nan
+nan, nan, nan, 16.4, nan, nan, 1001.2, nan
+nan, nan, nan, 16.4, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.4, nan, nan, 1001.2, nan
+nan, nan, nan, 16.4, nan, nan, 1001.2, nan
+nan, nan, nan, 16.4, nan, nan, 1001.2, nan
+nan, nan, nan, 16.4, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.4, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.4, nan, nan, 1001.2, nan
+nan, nan, nan, 16.5, nan, nan, 1001.2, nan
+nan, nan, nan, 16.5, nan, nan, 1001.2, nan
+nan, nan, nan, 16.5, nan, nan, 1001.2, nan
+nan, nan, nan, 16.5, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.5, nan, nan, 1001.2, nan
+nan, nan, nan, 16.5, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.5, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.5, nan, nan, 1001.2, nan
+nan, nan, nan, 16.6, nan, nan, 1001.2, nan
+nan, nan, nan, 16.6, nan, nan, 1001.2, nan
+nan, nan, nan, 16.6, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.6, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.6, nan, nan, 1001.2, nan
+nan, nan, nan, 16.6, nan, nan, 1001.2, nan
+nan, nan, nan, 16.6, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.6, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.6, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.6, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.6, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.6, nan, nan, 1001.2, nan
+nan, nan, nan, 16.6, nan, nan, 1001.2, nan
+nan, nan, nan, 16.6, nan, nan, 1001.2, nan
+nan, nan, nan, 16.7, nan, nan, 1001.2, nan
+nan, nan, nan, 16.7, nan, nan, 1001.2, nan
+nan, nan, nan, 16.7, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.7, nan, nan, 1001.2, nan
+nan, nan, nan, 16.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.7, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.7, nan, nan, 1001.2, nan
+nan, nan, nan, 16.7, nan, nan, 1001.2, nan
+nan, nan, nan, 16.7, nan, nan, 1001.2, nan
+nan, nan, nan, 16.7, nan, nan, 1001.2, nan
+nan, nan, nan, 16.7, nan, nan, 1001.2, nan
+nan, nan, nan, 16.8, nan, nan, 1001.2, nan
+nan, nan, nan, 16.8, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.8, nan, nan, 1001.2, nan
+nan, nan, nan, 16.8, nan, nan, 1001.2, nan
+nan, nan, nan, 16.8, nan, nan, 1001.2, nan
+nan, nan, nan, 16.8, nan, nan, 1001.2, nan
+nan, nan, nan, 16.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.8, nan, nan, 1001.2, nan
+nan, nan, nan, 16.8, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.8, nan, nan, 1001.2, nan
+nan, nan, nan, 16.8, nan, nan, 1001.2, nan
+nan, nan, nan, 16.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.8, nan, nan, 1001.2, nan
+nan, nan, nan, 16.8, nan, nan, 1001.2, nan
+nan, nan, nan, 16.8, nan, nan, 1001.2, nan
+nan, nan, nan, 16.8, nan, nan, 1001.2, nan
+nan, nan, nan, 16.8, nan, nan, 1001.2, nan
+nan, nan, nan, 16.9, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.9, nan, nan, 1001.2, nan
+nan, nan, nan, 16.9, nan, nan, 1001.2, nan
+nan, nan, nan, 16.9, nan, nan, 1001.2, nan
+nan, nan, nan, 16.9, nan, nan, 1001.2, nan
+nan, nan, nan, 16.9, nan, nan, 1001.2, nan
+nan, nan, nan, 16.9, nan, nan, 1001.2, nan
+nan, nan, nan, 16.9, nan, nan, 1001.2, nan
+nan, nan, nan, 16.9, nan, nan, 1001.2, nan
+nan, nan, nan, 16.9, nan, nan, 1001.2, nan
+nan, nan, nan, 16.9, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 16.9, nan, nan, 1001.2, nan
+nan, nan, nan, 16.9, nan, nan, 1001.2, nan
+nan, nan, nan, 16.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 16.9, nan, nan, 1001.2, nan
+nan, nan, nan, 16.9, nan, nan, 1001.2, nan
+nan, nan, nan, 16.9, nan, nan, 1001.2, nan
+nan, nan, nan, 17.0, nan, nan, 1001.2, nan
+nan, nan, nan, 17.0, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.0, nan, nan, 1001.2, nan
+nan, nan, nan, 17.0, nan, nan, 1001.2, nan
+nan, nan, nan, 17.0, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.0, nan, nan, 1001.2, nan
+nan, nan, nan, 17.0, nan, nan, 1001.2, nan
+nan, nan, nan, 17.0, nan, nan, 1001.2, nan
+nan, nan, nan, 17.1, nan, nan, 1001.2, nan
+nan, nan, nan, 17.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.1, nan, nan, 1001.2, nan
+nan, nan, nan, 17.1, nan, nan, 1001.2, nan
+nan, nan, nan, 17.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.1, nan, nan, 1001.2, nan
+nan, nan, nan, 17.1, nan, nan, 1001.2, nan
+nan, nan, nan, 17.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.1, nan, nan, 1001.2, nan
+nan, nan, nan, 17.1, nan, nan, 1001.2, nan
+nan, nan, nan, 17.1, nan, nan, 1001.2, nan
+nan, nan, nan, 17.1, nan, nan, 1001.2, nan
+nan, nan, nan, 17.1, nan, nan, 1001.2, nan
+nan, nan, nan, 17.1, nan, nan, 1001.2, nan
+nan, nan, nan, 17.1, nan, nan, 1001.2, nan
+nan, nan, nan, 17.2, nan, nan, 1001.2, nan
+nan, nan, nan, 17.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.5, nan, nan, 1001.2, nan
+nan, nan, nan, 17.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.5, nan, nan, 1001.2, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 17.6, nan, nan, 1001.2, nan
+nan, nan, nan, 17.6, nan, nan, 1001.2, nan
+nan, nan, nan, 17.6, nan, nan, 1001.2, nan
+nan, nan, nan, 17.6, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.6, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.6, nan, nan, 1001.2, nan
+nan, nan, nan, 17.6, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.7, nan, nan, 1001.2, nan
+nan, nan, nan, 17.7, nan, nan, 1001.2, nan
+nan, nan, nan, 17.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.7, nan, nan, 1001.2, nan
+nan, nan, nan, 17.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.8, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 17.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.8, nan, nan, 1001.2, nan
+nan, nan, nan, 17.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 17.8, nan, nan, 1001.1000000000001, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 18.2, nan, nan, 1001.2, nan
+nan, nan, nan, 18.2, nan, nan, 1001.2, nan
+nan, nan, nan, 18.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.2, nan, nan, 1001.2, nan
+nan, nan, nan, 18.2, nan, nan, 1001.2, nan
+nan, nan, nan, 18.2, nan, nan, 1001.2, nan
+nan, nan, nan, 18.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.3, nan, nan, 1001.2, nan
+nan, nan, nan, 18.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.3, nan, nan, 1000.9999999999999, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 18.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 18.7, nan, nan, 1001.1000000000001, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 19.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 19.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 19.1, nan, nan, 1001.2, nan
+nan, nan, nan, 19.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 19.2, nan, nan, 1001.1000000000001, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 19.6, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 19.6, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 19.6, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 19.6, nan, nan, 1001.1000000000001, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 19.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 19.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 19.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.0, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.0, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.0, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.0, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.0, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.0, nan, nan, 1001.2, nan
+nan, nan, nan, 20.0, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.0, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.0, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.0, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.0, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.0, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.0, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.1, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.1, nan, nan, 1001.2, nan
+nan, nan, nan, 20.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.1, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.1, nan, nan, 1001.1000000000001, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 20.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.4, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.4, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.4, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.4, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.4, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.4, nan, nan, 1001.2, nan
+nan, nan, nan, 20.4, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.4, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.4, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.4, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.4, nan, nan, 1001.1000000000001, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 20.5, nan, nan, 1001.2, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1001.2, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1001.2, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.5, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.5, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1001.2, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1001.2, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1001.2, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.5, nan, nan, 1001.1000000000001, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 20.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.7, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.8, nan, nan, 1001.2, nan
+nan, nan, nan, 20.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.8, nan, nan, 1001.1000000000001, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 20.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.9, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.9, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.9, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.9, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.9, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.9, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.9, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.9, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 20.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 20.9, nan, nan, 1001.1000000000001, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 21.5, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.2, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.2, nan, nan, 1000.9999999999999, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.2, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.2, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 21.3, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.3, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.3, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1000.8999999999999, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 21.3, nan, nan, 1001.2, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.2, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.2, nan
+nan, nan, nan, 21.3, nan, nan, 1001.2, nan
+nan, nan, nan, 21.3, nan, nan, 1001.2, nan
+nan, nan, nan, 21.3, nan, nan, 1001.2, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.2, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.2, nan
+nan, nan, nan, 21.3, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.3, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.3, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.4, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.4, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.4, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.4, nan, nan, 1001.1000000000001, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.2, nan
+nan, nan, nan, 21.8, nan, nan, 1001.2, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.2, nan
+nan, nan, nan, 21.8, nan, nan, 1001.2, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.2, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.2, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.2, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.2, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.2, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.2, nan
+nan, nan, nan, 21.8, nan, nan, 1001.3000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.8, nan, nan, 1001.1000000000001, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 21.9, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.9, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.9, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.9, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 21.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.9, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.9, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 21.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.9, nan, nan, 1001.1000000000001, nan
+nan, nan, nan, 21.9, nan, nan, 1000.9999999999999, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 22.7, nan, nan, 1000.8, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8, nan
+nan, nan, nan, 22.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.7, nan, nan, 1000.8, nan
+nan, nan, nan, 22.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.9999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.8, nan
+nan, nan, nan, 22.8, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.8, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 22.9, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 22.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 22.9, nan, nan, 1000.8, nan
+nan, nan, nan, 23.0, nan, nan, 1000.8, nan
+nan, nan, nan, 23.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.8, nan
+nan, nan, nan, 23.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.8, nan
+nan, nan, nan, 23.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.8, nan
+nan, nan, nan, 23.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.8, nan
+nan, nan, nan, 23.0, nan, nan, 1000.8, nan
+nan, nan, nan, 23.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.8, nan
+nan, nan, nan, 23.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.8, nan
+nan, nan, nan, 23.0, nan, nan, 1000.8, nan
+nan, nan, nan, 23.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.8, nan
+nan, nan, nan, 23.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.8, nan
+nan, nan, nan, 23.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.8, nan
+nan, nan, nan, 23.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.0, nan, nan, 1000.8, nan
+nan, nan, nan, 23.0, nan, nan, 1000.8, nan
+nan, nan, nan, 23.0, nan, nan, 1000.8, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.8, nan
+nan, nan, nan, 23.1, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.8, nan
+nan, nan, nan, 23.1, nan, nan, 1000.8, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.8, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.8, nan
+nan, nan, nan, 23.1, nan, nan, 1000.8, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.8, nan
+nan, nan, nan, 23.1, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.8, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.8, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.8, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.1, nan, nan, 1000.8, nan
+nan, nan, nan, 23.2, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.8, nan
+nan, nan, nan, 23.2, nan, nan, 1000.8, nan
+nan, nan, nan, 23.2, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.8999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.8, nan
+nan, nan, nan, 23.2, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.8, nan
+nan, nan, nan, 23.2, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.8, nan
+nan, nan, nan, 23.2, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.8, nan
+nan, nan, nan, 23.2, nan, nan, 1000.8, nan
+nan, nan, nan, 23.2, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.8, nan
+nan, nan, nan, 23.2, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.8, nan
+nan, nan, nan, 23.2, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.2, nan, nan, 1000.8, nan
+nan, nan, nan, 23.2, nan, nan, 1000.8, nan
+nan, nan, nan, 23.2, nan, nan, 1000.8, nan
+nan, nan, nan, 23.2, nan, nan, 1000.8, nan
+nan, nan, nan, 23.2, nan, nan, 1000.8, nan
+nan, nan, nan, 23.2, nan, nan, 1000.8, nan
+nan, nan, nan, 23.3, nan, nan, 1000.8, nan
+nan, nan, nan, 23.3, nan, nan, 1000.8, nan
+nan, nan, nan, 23.3, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.3, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.3, nan, nan, 1000.8, nan
+nan, nan, nan, 23.3, nan, nan, 1000.8, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 23.3, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.4, nan, nan, 1000.8, nan
+nan, nan, nan, 23.4, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.4, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.4, nan, nan, 1000.8, nan
+nan, nan, nan, 23.4, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.4, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.4, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.4, nan, nan, 1000.8, nan
+nan, nan, nan, 23.4, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.4, nan, nan, 1000.8, nan
+nan, nan, nan, 23.4, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.4, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.4, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.4, nan, nan, 1000.8, nan
+nan, nan, nan, 23.4, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.4, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.4, nan, nan, 1000.5999999999999, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 23.5, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.5, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.5, nan, nan, 1000.8, nan
+nan, nan, nan, 23.5, nan, nan, 1000.8, nan
+nan, nan, nan, 23.5, nan, nan, 1000.8, nan
+nan, nan, nan, 23.5, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.5, nan, nan, 1000.8, nan
+nan, nan, nan, 23.5, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.5, nan, nan, 1000.8, nan
+nan, nan, nan, 23.5, nan, nan, 1000.8, nan
+nan, nan, nan, 23.5, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.5, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.5, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.5, nan, nan, 1000.8, nan
+nan, nan, nan, 23.5, nan, nan, 1000.8, nan
+nan, nan, nan, 23.5, nan, nan, 1000.8, nan
+nan, nan, nan, 23.5, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.5, nan, nan, 1000.8, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 23.7, nan, nan, 1000.8, nan
+nan, nan, nan, 23.7, nan, nan, 1000.8, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.8, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.8, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.8, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.8, nan
+nan, nan, nan, 23.7, nan, nan, 1000.8, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.8, nan
+nan, nan, nan, 23.7, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.8, nan
+nan, nan, nan, 23.7, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.8, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.8, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.8, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.7, nan, nan, 1000.8, nan
+nan, nan, nan, 23.8, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.8, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.8, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.8, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.8, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.8, nan, nan, 1000.6999999999999, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 23.8, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.8, nan, nan, 1000.5, nan
+nan, nan, nan, 23.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.6999999999999, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 23.9, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.4, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.0, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.6999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.4, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5999999999999, nan
+nan, nan, nan, 24.1, nan, nan, 1000.5, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 24.6, nan, nan, 1000.4, nan
+nan, nan, nan, 24.6, nan, nan, 1000.4, nan
+nan, nan, nan, 24.6, nan, nan, 1000.3, nan
+nan, nan, nan, 24.6, nan, nan, 1000.4, nan
+nan, nan, nan, 24.6, nan, nan, 1000.4, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, 24.6, nan, nan, 1000.5, nan
+nan, nan, nan, 24.6, nan, nan, 1000.4, nan
+nan, nan, nan, 24.6, nan, nan, 1000.4, nan
+nan, nan, nan, 24.6, nan, nan, 1000.4, nan
+nan, nan, nan, 24.6, nan, nan, 1000.4, nan
+nan, nan, nan, 24.6, nan, nan, 1000.3, nan
+nan, nan, nan, 24.6, nan, nan, 1000.4, nan
+nan, nan, nan, 24.6, nan, nan, 1000.3, nan
+nan, nan, nan, 24.6, nan, nan, 1000.5, nan
+nan, nan, nan, 24.6, nan, nan, 1000.5, nan
+nan, nan, nan, 24.6, nan, nan, 1000.3, nan
+nan, nan, nan, 24.6, nan, nan, 1000.4, nan
+nan, nan, nan, 24.6, nan, nan, 1000.4, nan
+nan, nan, nan, 24.6, nan, nan, 1000.5, nan
+nan, nan, nan, 24.6, nan, nan, 1000.4, nan
+nan, nan, nan, 24.6, nan, nan, 1000.4, nan
+nan, nan, nan, 24.6, nan, nan, 1000.4, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.5, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.5, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.0, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.1, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.4, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.2, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.3, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.3, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+time, lat, lon, alt,  temp, wd,ws, pressure, hdop
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1999999999999, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.3, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.4, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.4, nan, nan, 1000.1, nan
+nan, nan, nan, nan, 25.4, nan, nan, 1000.1, nan

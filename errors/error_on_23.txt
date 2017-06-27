@@ -1,0 +1,5 @@
+Seems like the computer switched to energy saver mode, changing sleep settings such that computer
+attempted to got to sleep while instruments on.
+Support is that computer had power (blue LED at side was on) but had a blank
+screen when we openned it at the end of the bike ride.
+To fix, we need to change power saver settings on laptop
