@@ -299,13 +299,13 @@ class AMR_Daemon(object):
             local_step = "n"
         """if thelgr isn't connected, we set its data as a list of nans"""
         while True:
-                x = str(AMR_ser.readline())[2:-1]
+                x = str(AMR_ser.readline())[2:-5]
                 print("\\")
                 """read lines from com port"""
                 temp.append(x)
                 """append data to the temp file"""
-                """this if else block waits for temp to have 3 elements"""
-                if len(temp) == 3:
+                """this if else block waits for temp to have 4 elements"""
+                if len(temp) == 4:
                     """once 3 elements in temp, we split the
                        data in temp by instrument type
                        data from each sensor, pressure, gps and meterological
@@ -313,8 +313,8 @@ class AMR_Daemon(object):
                     gps = [lin for lin in temp if lin[0:6] == "$GPGGA"]
                     met = [lin for lin in temp if lin[0:6] == "$WIMDA"]
                     pre = [lin for lin in temp if lin[0:6] == "$YXXDR"]
-
-                    if ((bool(gps)) and (bool(met)) and (bool(pre))):
+                    win = [lin for lin in temp if lin[0:6] == "$WIMWD"]
+                    if (bool(gps) and bool(met) and bool(pre) and bool(win)):
                         """if we have one of each of the amr strings in the
                            triplet
                            we proecess them, else they are thrown out
@@ -332,6 +332,7 @@ class AMR_Daemon(object):
                         """
                         pre = [x.strip() for x in pre[0].split(",")]
                         """format: """
+                        win = [x.strip() for x in win[0].split(",")]
                         try:
                             lat = str(gps[2])
                             lat = float(lat[0:2]) + float(lat[2:])/60.
@@ -356,7 +357,7 @@ class AMR_Daemon(object):
                         """ditto as last try except"""
                         vars_str = [AMR_t, str(lat), str(lon), str(alt),
                                     met[5],
-                                    met[13], met[-2],
+                                    win[1], win[5],
                                     str(pres),
                                     str(hdop*accuracy)
                                     ]
