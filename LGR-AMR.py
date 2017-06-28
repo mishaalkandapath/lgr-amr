@@ -300,7 +300,7 @@ class AMR_Daemon(object):
         """if thelgr isn't connected, we set its data as a list of nans"""
         while True:
                 x = str(AMR_ser.readline())[2:-5]
-                print("\\")
+
                 """read lines from com port"""
                 temp.append(x)
                 """append data to the temp file"""
@@ -319,6 +319,7 @@ class AMR_Daemon(object):
                            triplet
                            we proecess them, else they are thrown out
                         """
+                        print("AMR data recieved")
                         met = [x.strip() for x in met[0].split(",")]
                         """format: pressure in bars, B, temp in celsius,
                            C, ,,,,,,true wind dir, T,
@@ -522,7 +523,7 @@ class LGR_Daemon(object):
                 """once average list incluodes rigth number of measuremnts
                    we set LGR step to y and do an average
                 """
-                print("/")
+                print("LGR data recieved")
                 LGR_avg_list.append(x)
                 if len(LGR_avg_list) == avg_time:
                     LGR_local_step = "y"

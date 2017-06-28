@@ -19,7 +19,7 @@ datasource
 #AMR
 COM4
 #LGR
-
+COM6
 # averaging time for data writen to plotting files, in seconds
 10
 # how often to attempt to write to the remote host in seconds
