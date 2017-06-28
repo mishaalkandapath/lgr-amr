@@ -357,7 +357,7 @@ class AMR_Daemon(object):
                         """ditto as last try except"""
                         vars_str = [AMR_t, str(lat), str(lon), str(alt),
                                     met[5],
-                                    win[1], win[5],
+                                    win[1], win[7],
                                     str(pres),
                                     str(hdop*accuracy)
                                     ]
