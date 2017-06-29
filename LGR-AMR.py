@@ -271,6 +271,28 @@ def find_average_time(time_array, format_str):
     return t_middle
 
 
+def wind_average(wind_array):
+    """this function splits an array of measured wind vectors into components
+       and outputs their average. The intial wind vectors are relative to
+       north as is the functions output
+    """
+    thetas = np.radians(wind_array[:, 0])
+    vs = wind_array[:, 1]
+
+    vxs = vs * np.sin(thetas)
+    vys = vs * np.cos(thetas)
+
+    vxs_avg = np.average(vxs)
+    vys_avg = np.average(vys)
+
+    thetas_avg_radians = np.degrees(np.arctan2(vys_avg, vxs_avg))
+    thetas_avg = (450 - thetas_avg_radians) % 360
+
+    vs_avg = np.average(vs)
+
+    return (thetas_avg, vs_avg)
+
+
 class AMR_Daemon(object):
     """this object holds the AMR function"""
     def __init__(self):
@@ -413,7 +435,11 @@ class AMR_Daemon(object):
                             """reset averaging triggers"""
                             data_list = np.array(AMR_avg_list)[:, 1:
                                                                ].astype("f8")
+                            winds = data_list[:, 4:6]
+                            wind_avg = wind_average(winds)
                             data_avg = np.average(data_list,  axis=0)
+                            data_avg[4] = wind_avg[0]
+                            data_avg[5] = wind_avg[1]
                             lat, lon = data_avg[0], data_avg[1]
                             data_avg = np.round(data_avg, 3)
                             """average data in avg list and round all values"""
