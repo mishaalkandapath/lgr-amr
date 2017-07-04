@@ -382,8 +382,11 @@ class AMR_Daemon(object):
                                     met[5],
                                     win[1], win[7],
                                     str(pres),
-                                    str(hdop*accuracy)
+                                    str(hdop*accuracy), met[13], met[-2]
                                     ]
+                        """time, lat, lon, alt, temp, wd_corr, ws_corr, press, 
+                            accuraccy, wd_uncorr, ws_uncorr
+                        """
                         temp = []
                         var_num = []
                         """here we cleared temp list and defined the lsit that
@@ -402,8 +405,11 @@ class AMR_Daemon(object):
                          """
                         var_num[0] = AMR_t
                         AMR_raw_data = tuple(var_num)
-                        AMR_avg_list.append(AMR_raw_data)
-                        """append the data tuple to an averaging list"""
+                        AMR_avg_list.append(AMR_raw_data[0:-2])
+                        """append the data tuple to an averaging list
+                           and remove uncorrected winds from it 
+                           (last two elements)
+                        """
                         AMR_raw_data = str(AMR_raw_data)[1:-1]
                         AMR_local_log_file.write(AMR_raw_data + "\r\n")
                         AMR_local_log_file.flush()
