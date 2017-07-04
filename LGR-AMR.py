@@ -436,7 +436,12 @@ class AMR_Daemon(object):
                             data_list = np.array(AMR_avg_list)[:, 1:
                                                                ].astype("f8")
                             winds = data_list[:, 4:6]
-                            wind_avg = wind_average(winds)
+                            try:
+                                wind_avg = wind_average(winds)
+                            except KeyboardInterrupt:
+                                raise
+                            except:
+                                wind_avg = (np.nan, np.nan)
                             data_avg = np.average(data_list,  axis=0)
                             data_avg[4] = wind_avg[0]
                             data_avg[5] = wind_avg[1]
