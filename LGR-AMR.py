@@ -311,9 +311,10 @@ class AMR_Daemon(object):
         temp = []
         AMR_avg_list = []
         AMR_local_log_file = open(AMR_local_log, mode="a")
-        AMR_local_log_file.write("time, lat, lon, alt,  temp, wd," +
-                                 "ws, pressure," +
-                                 " hdop\r\n")
+        AMR_local_log_file.write("time, lat, lon, alt,  temp, wd_corr," +
+                                 "ws_corr, pressure," +
+                                 " hdop, wd_uncorr, ws_uncorr, cog, sog\r\n"
+                                )
         AMR_local_log_file.flush()
 
         if LGR_ser == "":
@@ -327,7 +328,7 @@ class AMR_Daemon(object):
                 temp.append(x)
                 """append data to the temp file"""
                 """this if else block waits for temp to have 4 elements"""
-                if len(temp) == 4:
+                if len(temp) == 5:
                     """once 3 elements in temp, we split the
                        data in temp by instrument type
                        data from each sensor, pressure, gps and meterological
@@ -336,7 +337,10 @@ class AMR_Daemon(object):
                     met = [lin for lin in temp if lin[0:6] == "$WIMDA"]
                     pre = [lin for lin in temp if lin[0:6] == "$YXXDR"]
                     win = [lin for lin in temp if lin[0:6] == "$WIMWD"]
-                    if (bool(gps) and bool(met) and bool(pre) and bool(win)):
+                    vtg = [lin for lin in temp if lin[0:6] == "$GPVTG"]
+                    if (bool(gps) and bool(met) and bool(pre) and bool(win)
+                        and bool(vtg)
+                        :
                         """if we have one of each of the amr strings in the
                            triplet
                            we proecess them, else they are thrown out
@@ -356,6 +360,8 @@ class AMR_Daemon(object):
                         pre = [x.strip() for x in pre[0].split(",")]
                         """format: """
                         win = [x.strip() for x in win[0].split(",")]
+                        vtg = [x.strip() for x in vtg[0].split(",")]
+
                         try:
                             lat = str(gps[2])
                             lat = float(lat[0:2]) + float(lat[2:])/60.
@@ -382,7 +388,8 @@ class AMR_Daemon(object):
                                     met[5],
                                     win[1], win[7],
                                     str(pres),
-                                    str(hdop*accuracy), met[13], met[-2]
+                                    str(hdop*accuracy), met[13], met[-2],
+                                    vtg[1], vtg[7]
                                     ]
                         """time, lat, lon, alt, temp, wd_corr, ws_corr, press, 
                             accuraccy, wd_uncorr, ws_uncorr
@@ -405,7 +412,7 @@ class AMR_Daemon(object):
                          """
                         var_num[0] = AMR_t
                         AMR_raw_data = tuple(var_num)
-                        AMR_avg_list.append(AMR_raw_data[0:-2])
+                        AMR_avg_list.append(AMR_raw_data[0:-4])
                         """append the data tuple to an averaging list
                            and remove uncorrected winds from it 
                            (last two elements)
@@ -661,12 +668,12 @@ def main():
         t2.setDaemon(True)
         t2.start()
         print("LGR is on")
-
-    w = write_to_remote_Daemon()
-    t3 = Thread(target=w.write_to_remote)
-    t3.setDaemon(True)
-    t3.start()
-    print("Remote writing is on")
+    if mode == "remotely"
+        w = write_to_remote_Daemon()
+        t3 = Thread(target=w.write_to_remote)
+        t3.setDaemon(True)
+        t3.start()
+        print("Remote writing is on")
 
 
 if __name__ == "__main__":
