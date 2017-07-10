@@ -340,7 +340,7 @@ class AMR_Daemon(object):
                     vtg = [lin for lin in temp if lin[0:6] == "$GPVTG"]
                     if (bool(gps) and bool(met) and bool(pre) and bool(win)
                         and bool(vtg)
-                        :
+                        ):
                         """if we have one of each of the amr strings in the
                            triplet
                            we proecess them, else they are thrown out
@@ -668,7 +668,7 @@ def main():
         t2.setDaemon(True)
         t2.start()
         print("LGR is on")
-    if mode == "remotely"
+    if mode == "remotely":
         w = write_to_remote_Daemon()
         t3 = Thread(target=w.write_to_remote)
         t3.setDaemon(True)
