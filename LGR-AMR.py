@@ -285,14 +285,26 @@ def wind_average(wind_array):
     vxs_avg = np.average(vxs)
     vys_avg = np.average(vys)
 
-    thetas_avg_radians = np.degrees(np.arctan2(vys_avg, vxs_avg))
-    thetas_avg = (450 - thetas_avg_radians) % 360
+    thetas_avg = np.degrees(np.arctan2(vys_avg, vxs_avg))
+    thetas_avg = (450 - thetas_avg) % 360
 
     vs_avg = np.average(vs)
 
     return (thetas_avg, vs_avg)
 
 
+def w_corr(ws, wd, gs, gd):
+    ws_x = ws * np.sin(np.radians(wd))
+    ws_y = ws * np.cos(np.radians(wd))    
+    gs_x = gs * np.sin(np.radians(gd))
+    gs_y = gs * np.cos(np.radians(gd))  
+    ws_corr_x = ws_x - gs_x
+    ws_corr_y = ws_y - gs_y
+    wd_corr = np.degrees(np.arctan2(ws_corr_y, ws_corr_x))
+    wd_corr = (450 - wd_corr) % 360
+    ws_corr = np.sqrt(ws_corr_x**2 + ws_corr_y**2)
+    return (wd_corr, ws_corr)
+    
 class AMR_Daemon(object):
     """this object holds the AMR function"""
     def __init__(self):
@@ -412,6 +424,11 @@ class AMR_Daemon(object):
                          """
                         var_num[0] = AMR_t
                         AMR_raw_data = tuple(var_num)
+			AMR_raw_data[5], AMR_raw_data[6] = w_corr(AMR_raw_data[5],
+                                                                  AMR_raw_data[6],
+                                                                  AMR_raw_data[-2],
+                                                                  AMR_raw_data[-1]
+                                                                  )
                         AMR_avg_list.append(AMR_raw_data[0:-4])
                         """append the data tuple to an averaging list
                            and remove uncorrected winds from it 
