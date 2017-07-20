@@ -322,11 +322,17 @@ class AMR_Daemon(object):
         accuracy = 1  # instrument accuarcy
         temp = []
         AMR_avg_list = []
-        AMR_local_log_file = open(AMR_local_log, mode="a")
-        AMR_local_log_file.write("time, lat, lon, alt, temp, wd_corr," +
-                                 " ws_corr, pressure," +
-                                 " hdop, wd_uncorr, ws_uncorr, heading, cog, sog\r\n"
-                                )
+        try:
+            AMR_local_log_file = open(AMR_local_log, mode="r")
+            AMR_local_log_file.close()
+            AMR_local_log_file = open(AMR_local_log, mode="a")
+        except FileNotFoundError:
+            AMR_local_log_file = open(AMR_local_log, mode="a")
+            AMR_local_log_file.write("time, lat, lon, alt, temp, wd_corr," +
+                                     " ws_corr, pressure," +
+                                     " hdop, wd_uncorr, ws_uncorr, heading," +
+                                     " cog, sog\r\n"
+                                     )
         """T indicates that the ws and wd (in ws_uncorr and wd_uncorr) are corr for velocity relative to the "bow" 
         R indicates they are relative to the airmar"""
         
@@ -534,8 +540,13 @@ class LGR_Daemon(object):
     def data_read(self):
         global LGR_local_log, mode, AMR_local_log
         global AMR_ser, LGR_ser, avg_time, err_log
+        try:
+        LGR_local_log_file = open(LGR_local_log, mode="r")
+        LGR_local_log_file.close()
         LGR_local_log_file = open(LGR_local_log, mode="a")
-        LGR_local_log_file.write("lgr_time, ch4, ch4se, h2o, " +
+        except FileNotFoundError:
+            LGR_local_log_file = open(LGR_local_log, mode="a")
+            LGR_local_log_file.write("lgr_time, ch4, ch4se, h2o, " +
                                  "h2ose, co2, co2se, co, cose, ch4d, " +
                                  "ch4dse, co2d, co2dse, cod, codse, gasp, " +
                                  "gaspse, t, tse, amb, ambse, rd1, rd1se, " +
