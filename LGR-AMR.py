@@ -295,9 +295,9 @@ def wind_average(wind_array):
 
 def w_corr(ws, wd, gs, gd):
     ws_x = ws * np.sin(np.radians(wd))
-    ws_y = ws * np.cos(np.radians(wd))    
+    ws_y = ws * np.cos(np.radians(wd))
     gs_x = gs * np.sin(np.radians(gd))
-    gs_y = gs * np.cos(np.radians(gd))  
+    gs_y = gs * np.cos(np.radians(gd))
     ws_corr_x = ws_x - gs_x
     ws_corr_y = ws_y - gs_y
     wd_corr = np.degrees(np.arctan2(ws_corr_y, ws_corr_x))
@@ -323,10 +323,13 @@ class AMR_Daemon(object):
         temp = []
         AMR_avg_list = []
         AMR_local_log_file = open(AMR_local_log, mode="a")
-        AMR_local_log_file.write("time, lat, lon, alt,  temp, wd_corr," +
-                                 "ws_corr, pressure," +
-                                 " hdop, wd_uncorr, ws_uncorr, cog, sog\r\n"
+        AMR_local_log_file.write("time, lat, lon, alt, temp, wd_corr," +
+                                 " ws_corr, pressure," +
+                                 " hdop, wd_uncorr, ws_uncorr, heading, cog, sog\r\n"
                                 )
+        """T indicates that the ws and wd (in ws_uncorr and wd_uncorr) are corr for velocity relative to the "bow" 
+        R indicates they are relative to the airmar"""
+        
         AMR_local_log_file.flush()
 
         if LGR_ser == "":
@@ -340,7 +343,7 @@ class AMR_Daemon(object):
                 temp.append(x)
                 """append data to the temp file"""
                 """this if else block waits for temp to have 4 elements"""
-                if len(temp) == 5:
+                if len(temp) == 6:
                     """once 3 elements in temp, we split the
                        data in temp by instrument type
                        data from each sensor, pressure, gps and meterological
@@ -348,10 +351,11 @@ class AMR_Daemon(object):
                     gps = [lin for lin in temp if lin[0:6] == "$GPGGA"]
                     met = [lin for lin in temp if lin[0:6] == "$WIMDA"]
                     pre = [lin for lin in temp if lin[0:6] == "$YXXDR"]
-                    win = [lin for lin in temp if lin[0:6] == "$WIMWD"]
+                    win = [lin for lin in temp if lin[0:6] == "$WIMWV"]  # WIMWV is wind relative to the "bow"
                     vtg = [lin for lin in temp if lin[0:6] == "$GPVTG"]
+                    hdg = [lin for lin in temp if lin[0:6] == "$HCHDT"]
                     if (bool(gps) and bool(met) and bool(pre) and bool(win)
-                        and bool(vtg)
+                        and bool(vtg) and bool(hdg)
                         ):
                         """if we have one of each of the amr strings in the
                            triplet
@@ -373,6 +377,8 @@ class AMR_Daemon(object):
                         """format: """
                         win = [x.strip() for x in win[0].split(",")]
                         vtg = [x.strip() for x in vtg[0].split(",")]
+                        hdg = [x.strip() for x in hdg[0].split(",")]
+                        
 
                         try:
                             lat = str(gps[2])
@@ -398,13 +404,13 @@ class AMR_Daemon(object):
                         """ditto as last try except"""
                         vars_str = [AMR_t, str(lat), str(lon), str(alt),
                                     met[5],
-                                    win[1], win[7],
+                                    met[13], met[-2],  #wind direction, wind speed corrected for AMR velocity
                                     str(pres),
-                                    str(hdop*accuracy), met[13], met[-2],
+                                    str(hdop*accuracy), win[1], win[3], hdg[1],
                                     vtg[1], vtg[7]
                                     ]
                         """time, lat, lon, alt, temp, wd_corr, ws_corr, press, 
-                            accuraccy, wd_uncorr, ws_uncorr
+                            accuraccy, wd_uncorr, ws_uncorr, true heading,
                         """
                         temp = []
                         var_num = []
@@ -423,13 +429,15 @@ class AMR_Daemon(object):
                             data with nans
                          """
                         var_num[0] = AMR_t
+                        #AMR_raw_data = tuple(var_num)
+                        AMR_raw_data = var_num
+                        #y = [0, 0]
+                        #y[0], y[1] = w_corr(AMR_raw_data[5], AMR_raw_data[6], AMR_raw_data[-2], AMR_raw_data[-1]
+                        #                            )
+                        #AMR_raw_data[5], AMR_raw_data[6] = w_corr(AMR_raw_data[5], AMR_raw_data[6], AMR_raw_data[-2], AMR_raw_data[-1])
                         AMR_raw_data = tuple(var_num)
-			AMR_raw_data[5], AMR_raw_data[6] = w_corr(AMR_raw_data[5],
-                                                                  AMR_raw_data[6],
-                                                                  AMR_raw_data[-2],
-                                                                  AMR_raw_data[-1]
-                                                                  )
-                        AMR_avg_list.append(AMR_raw_data[0:-4])
+
+                        AMR_avg_list.append(AMR_raw_data[0:-5])  #changed to 5 since we added new wind parameter to end of str
                         """append the data tuple to an averaging list
                            and remove uncorrected winds from it 
                            (last two elements)
