@@ -256,7 +256,7 @@ def attach_date(satalite_time):
          and returns YYYY-MM-DD HHMMSS.ffff
     """
     date_str = dt.datetime.now(utc).date().isoformat()
-    return date_str + " " + str(satalite_time)
+    return (date_str + " " + str(satalite_time)).strip("'")
 
 
 def find_average_time(time_array, format_str):
@@ -328,10 +328,10 @@ class AMR_Daemon(object):
             AMR_local_log_file = open(AMR_local_log, mode="a")
         except FileNotFoundError:
             AMR_local_log_file = open(AMR_local_log, mode="a")
-            AMR_local_log_file.write("time, lat, lon, alt, temp, wd_corr," +
-                                     " ws_corr, pressure," +
-                                     " hdop, wd_uncorr, ws_uncorr, heading," +
-                                     " cog, sog\r\n"
+            AMR_local_log_file.write("gps_time,lat,lon,alt,temp,wd_corr," +
+                                     "ws_corr,pressure," +
+                                     "hdop,wd_uncorr,ws_uncorr,heading," +
+                                     "cog,sog, computer_utc_time\r\n"
                                      )
         """T indicates that the ws and wd (in ws_uncorr and wd_uncorr) are corr for velocity relative to the "bow" 
         R indicates they are relative to the airmar"""
@@ -344,7 +344,6 @@ class AMR_Daemon(object):
         """if thelgr isn't connected, we set its data as a list of nans"""
         while True:
                 x = str(AMR_ser.readline())[2:-5]
-
                 """read lines from com port"""
                 temp.append(x)
                 """append data to the temp file"""
@@ -368,6 +367,8 @@ class AMR_Daemon(object):
                            we proecess them, else they are thrown out
                         """
                         print("AMR data recieved")
+                        comp_time = str(dt.datetime.now(utc))
+
                         met = [x.strip() for x in met[0].split(",")]
                         """format: pressure in bars, B, temp in celsius,
                            C, ,,,,,,true wind dir, T,
@@ -449,7 +450,7 @@ class AMR_Daemon(object):
                            (last two elements)
                         """
                         AMR_raw_data = str(AMR_raw_data)[1:-1]
-                        AMR_local_log_file.write(AMR_raw_data + "\r\n")
+                        AMR_local_log_file.write(AMR_raw_data + "," + comp_time.strip("'") + "\r\n")
                         AMR_local_log_file.flush()
                         """write to raw data to local log file"""
 
@@ -541,16 +542,16 @@ class LGR_Daemon(object):
         global LGR_local_log, mode, AMR_local_log
         global AMR_ser, LGR_ser, avg_time, err_log
         try:
-        LGR_local_log_file = open(LGR_local_log, mode="r")
-        LGR_local_log_file.close()
-        LGR_local_log_file = open(LGR_local_log, mode="a")
+            LGR_local_log_file = open(LGR_local_log, mode="r")
+            LGR_local_log_file.close()
+            LGR_local_log_file = open(LGR_local_log, mode="a")
         except FileNotFoundError:
             LGR_local_log_file = open(LGR_local_log, mode="a")
-            LGR_local_log_file.write("lgr_time, ch4, ch4se, h2o, " +
-                                 "h2ose, co2, co2se, co, cose, ch4d, " +
-                                 "ch4dse, co2d, co2dse, cod, codse, gasp, " +
-                                 "gaspse, t, tse, amb, ambse, rd1, rd1se, " +
-                                 "rd2, rd2se" + "\r\n"
+            LGR_local_log_file.write("lgr_time,ch4,ch4se,h2o," +
+                                 "h2ose,co2,co2se,co,cose,ch4d," +
+                                 "ch4dse,co2d,co2dse,cod,codse,gasp," +
+                                 "gaspse,t,tse,amb,ambse,rd1,rd1se," +
+                                 "rd2,rd2se,computer_utc_time" + "\r\n"
                                  )
         global data_step
         global LGR_data, LGR_avg_list, AMR_data
@@ -565,6 +566,7 @@ class LGR_Daemon(object):
         while True:
                 LGR_str = str(LGR_ser.readline())[2:-1].split(",")[0:-7]
                 x = LGR_str[1:]
+                comp_time = str(dt.datetime.now(utc))
                 xlist = []
                 for y in x:
                     try:
@@ -595,9 +597,9 @@ class LGR_Daemon(object):
                 x.insert(0, LGR_t)
                 LGR_raw_data = ""
                 for var in x:
-                    LGR_raw_data = LGR_raw_data + str(var) + ", "
+                    LGR_raw_data = LGR_raw_data + str(var) + ","
                 LGR_raw_data = LGR_raw_data[1:-2]
-                LGR_local_log_file.write(LGR_raw_data + "\r\n")
+                LGR_local_log_file.write(LGR_raw_data + "," + comp_time.strip(",") +  "\r\n")
                 LGR_local_log_file.flush()
                 "above writes data to local log file for LGR"""
                 """once average list incluodes rigth number of measuremnts
