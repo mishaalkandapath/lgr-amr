@@ -23,4 +23,4 @@ COM7
 # averaging time for data writen to plotting files, in seconds
 15
 # how often to attempt to write to the remote host in seconds
-60
+30
