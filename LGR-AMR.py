@@ -506,7 +506,9 @@ class AMR_Daemon(object):
                                                              "%Y-%m-%d" +
                                                              " %H%M%S.%f"
                                                              )
-                            except TypeError:
+                            except KeyboardInterrupt:
+                                raise
+                            except:
                                 t_middle = np.nan
                             data_avg = np.insert(data_avg, 0, t_middle)
                             """add the average time in the measurement period
