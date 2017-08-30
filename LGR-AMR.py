@@ -31,7 +31,7 @@ def logging_setup(in_file):
     global remote_write_period, err_log
     """how often attempt to write to server, important as we don't want to
        ping server too freqeuntly"""
-    global LGR_local_log, mode, AMR_local_log, local_plot_file
+    global LGR_local_log, mode, AMR_local_log, local_plot_file, local_cache_file
     """define local log files and if we're writing locally or remotely
        also define the local copy of the remote plotting file
     """
@@ -48,6 +48,9 @@ def logging_setup(in_file):
         """in remote mode, we define server varibles and open an ssh port
             using the varibales defined here
         """
+        local_cache_file = open(("./local-cache"
+                            ), mode="a+"
+                           )
         hostname = in_file[1]
         port = int(in_file[2])
         username = in_file[3]
@@ -138,13 +141,15 @@ def prep_data_string():
        copy of the file uploaded to the server
     """
     global AMR_data, LGR_data, avg_time, data_str
-    global local_plot_file
+    global local_plot_file, local_cache_file
 
     data_str = ((AMR_data + "," + LGR_data + "," + str(avg_time) + "," +
                  str(dt.datetime.now()) + ";\n"
                  )
                 )
     print(data_str)
+    local_cache_file.write(data_str)
+    local_cache_file.flush()
     local_plot_file.write(data_str)
     local_plot_file.flush()
 
@@ -192,16 +197,16 @@ class write_to_remote_Daemon(object):
     def write_to_remote(self):
         global sftp, file_object
         global network_status
-        global local_file_step, remote_data_str
+        global local_file_step, remote_data_str, local_cache_file
 
         while True:
                 sleep(int(in_file[11]))
                 """sleep so we aren't pinging remote machine too freqeunctly"""
                 if network_status == "online":
                     try:
-                        local_plot_file.seek(0)
-                        for i, l in enumerate(local_plot_file):
-                            if i >= local_file_step:
+                        local_cache_file.seek(0)
+                        for i, l in enumerate(local_cache_file):
+#                            if i >= local_file_step:
                                 if len(l.split(",")) != 16:
                                     continue
                                 else:
@@ -209,10 +214,12 @@ class write_to_remote_Daemon(object):
                                     print("Successfully wrote new lines to " +
                                           "remote " +
                                           "machine")
-                                local_file_step = local_file_step + 1
-                            else:
-                                continue
-
+#                                local_file_step = local_file_step + 1
+#                            else:
+#                                continue
+                        local_cache_file.close()
+                        local_cache_file = open("./local-cache", mode="w").close()
+                        local_cache_file = open("./local-cache", mode="a+")
                     except KeyboardInterrupt:
                         raise
                     except:
@@ -343,9 +350,9 @@ class AMR_Daemon(object):
             local_step = "n"
         """if thelgr isn't connected, we set its data as a list of nans"""
         while True:
-                x = str(AMR_ser.readline())[2:-5]
+                amr_str = str(AMR_ser.readline())[2:-5]
                 """read lines from com port"""
-                temp.append(x)
+                temp.append(amr_str)
                 """append data to the temp file"""
                 """this if else block waits for temp to have 4 elements"""
                 if len(temp) == 6:
@@ -567,22 +574,21 @@ class LGR_Daemon(object):
             AMR_data = AMR_data[:-1]
         while True:
                 LGR_str = str(LGR_ser.readline())[2:-1].split(",")[0:-7]
-                x = LGR_str[1:]
+                lgr_str = LGR_str[1:]
                 comp_time = str(dt.datetime.now(utc))
-                xlist = []
-                for y in x:
+                lgr_lst = []
+                for y in lgr_str:
                     try:
-                        xlist.append(float(y))
+                        lgr_lst.append(float(y))
                     except KeyboardInterrupt:
                         raise
                     except:
-                        xlist.append(np.nan)
+                        lgr_lst.append(np.nan)
                 """above block converts string to floats and handles
                    missing data fields
                 """
-                x = xlist
                 try:
-                    err = instrument_chk(x[20], x[22],  x[14])
+                    err = instrument_chk(lgr_lst[20], lgr_lst[22], lgr_lst[14])
                 except IndexError:
                     print("Missing Data String from LGR")
                     continue
@@ -596,9 +602,9 @@ class LGR_Daemon(object):
                    at measurement
                 """
                 LGR_t = LGR_str[0][2:]
-                x.insert(0, LGR_t)
+                lgr_lst.insert(0, LGR_t)
                 LGR_raw_data = ""
-                for var in x:
+                for var in lgr_lst:
                     LGR_raw_data = LGR_raw_data + str(var) + ","
                 LGR_raw_data = LGR_raw_data[1:-2]
                 LGR_local_log_file.write(LGR_raw_data + "," + comp_time.strip(",") +  "\r\n")
@@ -608,7 +614,7 @@ class LGR_Daemon(object):
                    we set LGR step to y and do an average
                 """
                 print("LGR data recieved")
-                LGR_avg_list.append(x)
+                LGR_avg_list.append(lgr_lst)
                 if len(LGR_avg_list) == avg_time:
                     LGR_local_step = "y"
 
