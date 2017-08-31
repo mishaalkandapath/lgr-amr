@@ -11,7 +11,6 @@ import socket
 from threading import Thread
 from getpass import getpass
 from serial import Serial
-# from serial import giaerror
 from pytz import timezone
 from paramiko import SSHClient, AutoAddPolicy
 from time import sleep
