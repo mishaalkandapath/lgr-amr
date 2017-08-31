@@ -148,8 +148,13 @@ def prep_data_string():
                  )
                 )
     print(data_str)
-    local_cache_file.write(data_str)
-    local_cache_file.flush()
+    try:
+        local_cache_file.write(data_str)
+        local_cache_file.flush()
+    except AttributeError:
+        local_cache_file = open("./local-cache", mode="a+")
+        local_cache_file.write(data_str)
+        local_cache_file.flush()
     local_plot_file.write(data_str)
     local_plot_file.flush()
 
@@ -217,7 +222,6 @@ class write_to_remote_Daemon(object):
 #                                local_file_step = local_file_step + 1
 #                            else:
 #                                continue
-                        local_cache_file.close()
                         local_cache_file = open("./local-cache", mode="w").close()
                         local_cache_file = open("./local-cache", mode="a+")
                     except KeyboardInterrupt:
@@ -350,50 +354,89 @@ class AMR_Daemon(object):
             local_step = "n"
         """if thelgr isn't connected, we set its data as a list of nans"""
         while True:
-                amr_str = str(AMR_ser.readline())[2:-5]
-                """read lines from com port"""
-                temp.append(amr_str)
-                """append data to the temp file"""
-                """this if else block waits for temp to have 4 elements"""
-                if len(temp) == 6:
-                    """once 3 elements in temp, we split the
-                       data in temp by instrument type
-                       data from each sensor, pressure, gps and meterological
+            amr_str = str(AMR_ser.readline())[2:-5]
+            """read lines from com port"""
+            temp.append(amr_str)
+            """append data to the temp file"""
+            """this if else block waits for temp to have 4 elements"""
+            if len(temp) == 6:
+                """once 3 elements in temp, we split the
+                   data in temp by instrument type
+                   data from each sensor, pressure, gps and meterological
+                """
+                gps = [lin for lin in temp if lin[0:6] == "$GPGGA"]
+                met = [lin for lin in temp if lin[0:6] == "$WIMDA"]
+                pre = [lin for lin in temp if lin[0:6] == "$YXXDR"]
+                win = [lin for lin in temp if lin[0:6] == "$WIMWV"]  # WIMWV is wind relative to the "bow"
+                vtg = [lin for lin in temp if lin[0:6] == "$GPVTG"]
+                hdg = [lin for lin in temp if lin[0:6] == "$HCHDT"]
+                if (bool(gps) and bool(met) and bool(pre) and bool(win)
+                    and bool(vtg) and bool(hdg)
+                    ):
+                    """if we have one of each of the amr strings in the
+                       triplet
+                       we proecess them, else they are thrown out
                     """
-                    gps = [lin for lin in temp if lin[0:6] == "$GPGGA"]
-                    met = [lin for lin in temp if lin[0:6] == "$WIMDA"]
-                    pre = [lin for lin in temp if lin[0:6] == "$YXXDR"]
-                    win = [lin for lin in temp if lin[0:6] == "$WIMWV"]  # WIMWV is wind relative to the "bow"
-                    vtg = [lin for lin in temp if lin[0:6] == "$GPVTG"]
-                    hdg = [lin for lin in temp if lin[0:6] == "$HCHDT"]
-                    if (bool(gps) and bool(met) and bool(pre) and bool(win)
-                        and bool(vtg) and bool(hdg)
-                        ):
-                        """if we have one of each of the amr strings in the
-                           triplet
-                           we proecess them, else they are thrown out
-                        """
-                        print("AMR data recieved")
-                        comp_time = str(dt.datetime.now(utc))
+                    print("AMR data recieved")
+                    comp_time = str(dt.datetime.now(utc))
 
-                        met = [x.strip() for x in met[0].split(",")]
-                        """format: pressure in bars, B, temp in celsius,
-                           C, ,,,,,,true wind dir, T,
-                           magnetic wind dir, M, true ws in knots, N,
-                           true ws in ms , M
-                        """
-                        gps = [x.strip() for x in gps[0].split(",")]
-                        """format: utc time, lat,N/s, lon,W/E, fix quality,
-                                   number of satalites, hdop, altiude, M,
-                                   mean sea level , M,, checksum
-                        """
-                        pre = [x.strip() for x in pre[0].split(",")]
-                        """format: """
-                        win = [x.strip() for x in win[0].split(",")]
-                        vtg = [x.strip() for x in vtg[0].split(",")]
-                        hdg = [x.strip() for x in hdg[0].split(",")]
-                        
+                    met = [x.strip() for x in met[0].split(",")]
+                    """format: pressure in bars, B, temp in celsius,
+                       C, ,,,,,,true wind dir, T,
+                       magnetic wind dir, M, true ws in knots, N,
+                       true ws in ms , M
+                    """
+                    gps = [x.strip() for x in gps[0].split(",")]
+                    """format: utc time, lat,N/s, lon,W/E, fix quality,
+                               number of satalites, hdop, altiude, M,
+                               mean sea level , M,, checksum
+                    """
+                    pre = [x.strip() for x in pre[0].split(",")]
+                    """format: """
+                    win = [x.strip() for x in win[0].split(",")]
+                    vtg = [x.strip() for x in vtg[0].split(",")]
+                    hdg = [x.strip() for x in hdg[0].split(",")]
+                    
 
+                    try:
+                        lat = str(gps[2])
+                        lat = float(lat[0:2]) + float(lat[2:])/60.
+                        lon = str(gps[4])
+                        lon = -float(lon[0:3]) - float(lon[3:])/60.
+                        alt = float(gps[9])
+                        hdop = float(gps[8])
+                        AMR_t = attach_date(gps[1])
+                    except ValueError:
+                        lat, lon, alt, AMR_t, hdop = (np.nan, np.nan,
+                                                      np.nan, np.nan,
+                                                      np.nan
+                                                      )
+                    """this try except block handles if the AMR isn't
+                       conneceted to gps, we write nans if not connected
+                    """
+                    # TODO: to do, ask Colin to put calibrations on his end
+                    try:
+                        pres = float(pre[-3])*1000.
+                    except ValueError:
+                        pres = np.nan
+                    """ditto as last try except"""
+                    vars_str = [AMR_t, str(lat), str(lon), str(alt),
+                                met[5],
+                                met[13], met[-2],  #wind direction, wind speed corrected for AMR velocity
+                                str(pres),
+                                str(hdop*accuracy), win[1], win[3], hdg[1],
+                                vtg[1], vtg[7]
+                                ]
+                    """time, lat, lon, alt, temp, wd_corr, ws_corr, press, 
+                        accuraccy, wd_uncorr, ws_uncorr, true heading,
+                    """
+                    temp = []
+                    var_num = []
+                    """here we cleared temp list and defined the lsit that
+                       will
+                       hold the data in a numeric format
+                    """
+                    for var in vars_str:
                         try:
                             lat = str(gps[2])
                             lat = float(lat[0:2]) + float(lat[2:])/60.
@@ -403,144 +446,111 @@ class AMR_Daemon(object):
                             hdop = float(gps[8])
                             AMR_t = attach_date(gps[1])
                         except ValueError:
-                            lat, lon, alt, AMR_t, hdop = (np.nan, np.nan,
-                                                          np.nan, np.nan,
-                                                          np.nan
-                                                          )
-                        """this try except block handles if the AMR isn't
-                           conneceted to gps, we write nans if not connected
-                        """
-                        # TODO: to do, ask Colin to put calibrations on his end
-                        try:
-                            pres = float(pre[-3])*1000.
-                        except ValueError:
-                            pres = np.nan
-                        """ditto as last try except"""
-                        vars_str = [AMR_t, str(lat), str(lon), str(alt),
-                                    met[5],
-                                    met[13], met[-2],  #wind direction, wind speed corrected for AMR velocity
-                                    str(pres),
-                                    str(hdop*accuracy), win[1], win[3], hdg[1],
-                                    vtg[1], vtg[7]
-                                    ]
-                        """time, lat, lon, alt, temp, wd_corr, ws_corr, press, 
-                            accuraccy, wd_uncorr, ws_uncorr, true heading,
-                        """
-                        temp = []
-                        var_num = []
-                        """here we cleared temp list and defined the lsit that
-                           will
-                           hold the data in a numeric format
-                        """
-                        for var in vars_str:
-                            try:
-                                var = float(var)
-                            except ValueError:
-                                var = np.nan
-                            var_num.append(var)
-                        """here we filled the numeric list and filled the
-                            missing
-                            data with nans
-                         """
-                        var_num[0] = AMR_t
-                        #AMR_raw_data = tuple(var_num)
-                        AMR_raw_data = var_num
-                        #y = [0, 0]
-                        #y[0], y[1] = w_corr(AMR_raw_data[5], AMR_raw_data[6], AMR_raw_data[-2], AMR_raw_data[-1]
-                        #                            )
-                        #AMR_raw_data[5], AMR_raw_data[6] = w_corr(AMR_raw_data[5], AMR_raw_data[6], AMR_raw_data[-2], AMR_raw_data[-1])
-                        AMR_raw_data = tuple(var_num)
+                            var = np.nan
+                        var_num.append(var)
+                    """here we filled the numeric list and filled the
+                        missing
+                        data with nans
+                     """
+                    var_num[0] = AMR_t
+                    #AMR_raw_data = tuple(var_num)
+                    AMR_raw_data = var_num
+                    #y = [0, 0]
+                    #y[0], y[1] = w_corr(AMR_raw_data[5], AMR_raw_data[6], AMR_raw_data[-2], AMR_raw_data[-1]
+                    #                            )
+                    #AMR_raw_data[5], AMR_raw_data[6] = w_corr(AMR_raw_data[5], AMR_raw_data[6], AMR_raw_data[-2], AMR_raw_data[-1])
+                    AMR_raw_data = tuple(var_num)
 
-                        AMR_avg_list.append(AMR_raw_data[0:-5])  #changed to 5 since we added new wind parameter to end of str
-                        """append the data tuple to an averaging list
-                           and remove uncorrected winds from it 
-                           (last two elements)
-                        """
-                        AMR_raw_data = str(AMR_raw_data)[1:-1]
-                        AMR_local_log_file.write(AMR_raw_data + "," + comp_time.strip("'") + "\r\n")
-                        AMR_local_log_file.flush()
-                        """write to raw data to local log file"""
+                    AMR_avg_list.append(AMR_raw_data[0:-5])  #changed to 5 since we added new wind parameter to end of str
+                    """append the data tuple to an averaging list
+                       and remove uncorrected winds from it 
+                       (last two elements)
+                    """
+                    AMR_raw_data = str(AMR_raw_data)[1:-1]
+                    AMR_local_log_file.write(AMR_raw_data + "," + comp_time.strip("'") + "\r\n")
+                    AMR_local_log_file.flush()
+                    """write to raw data to local log file"""
 
-                        """determine when averaging of back data occurrs,
-                           either
-                           triggered by LGR or by length of AMR list
-                           depending
-                           on which instruments are connected
-                        """
-                        if LGR_ser != "":
-                            global data_step
-                            local_step = data_step
-                        else:
-                            if len(AMR_avg_list) == avg_time:
-                                local_step = "y"
-                            else:
-                                local_step = "n"
-                        """once local step triger occurrs we average the AMR
-                           data
-                           and use
-                           the write to the local copy of the file sent to the
-                           remote machine
-                        """
-                        if local_step == "y":
-                            data_step = "n"
-                            local_step = "n"
-                            """reset averaging triggers"""
-                            data_list = np.array(AMR_avg_list)[:, 1:
-                                                               ].astype("f8")
-                            winds = data_list[:, 4:6]
-                            try:
-                                wind_avg = wind_average(winds)
-                            except KeyboardInterrupt:
-                                raise
-                            except:
-                                wind_avg = (np.nan, np.nan)
-                            data_avg = np.average(data_list,  axis=0)
-                            data_avg[4] = wind_avg[0]
-                            data_avg[5] = wind_avg[1]
-                            lat, lon = data_avg[0], data_avg[1]
-                            data_avg = np.round(data_avg, 3)
-                            """average data in avg list and round all values"""
-                            data_avg[0] = lat
-                            data_avg[1] = lon
-                            """replace lat and lon fields with unrounded values
-                               for plotting
-                            """
-
-                            data_avg = data_avg.astype("str")
-                            time_array = np.array(AMR_avg_list)[:, 0]
-                            try:
-                                t_middle = find_average_time(time_array,
-                                                             "%Y-%m-%d" +
-                                                             " %H%M%S.%f"
-                                                             )
-                            except KeyboardInterrupt:
-                                raise
-                            except:
-                                t_middle = np.nan
-                            data_avg = np.insert(data_avg, 0, t_middle)
-                            """add the average time in the measurement period
-                                to
-                                the start of the array
-                            """
-
-                            AMR_data = ""
-                            """reset data string"""
-                            for var in data_avg:
-                                AMR_data = AMR_data + str(var) + ","
-                            AMR_data = AMR_data[:-1]
-                            prep_data_string()
-                            """write data in averaging array to a string and
-                               use
-                               prep data to concatentate with the LGR data
-                               and
-                               write to the local copy of the remote plotting
-                               file
-                            """
-                            AMR_avg_list = []
-                            """reset aveeragign list"""
+                    """determine when averaging of back data occurrs,
+                       either
+                       triggered by LGR or by length of AMR list
+                       depending
+                       on which instruments are connected
+                    """
+                    if LGR_ser != "":
+                        global data_step
+                        local_step = data_step
                     else:
-                        print("Sentences are missing")
-                        temp = []
+                        if len(AMR_avg_list) == avg_time:
+                            local_step = "y"
+                        else:
+                            local_step = "n"
+                    """once local step triger occurrs we average the AMR
+                       data
+                       and use
+                       the write to the local copy of the file sent to the
+                       remote machine
+                    """
+                    if local_step == "y":
+                        data_step = "n"
+                        local_step = "n"
+                        """reset averaging triggers"""
+                        data_list = np.array(AMR_avg_list)[:, 1:
+                                                           ].astype("f8")
+                        winds = data_list[:, 4:6]
+                        try:
+                            wind_avg = wind_average(winds)
+                        except KeyboardInterrupt:
+                            raise
+                        except:
+                            wind_avg = (np.nan, np.nan)
+                        data_avg = np.average(data_list,  axis=0)
+                        data_avg[4] = wind_avg[0]
+                        data_avg[5] = wind_avg[1]
+                        lat, lon = data_avg[0], data_avg[1]
+                        data_avg = np.round(data_avg, 3)
+                        """average data in avg list and round all values"""
+                        data_avg[0] = lat
+                        data_avg[1] = lon
+                        """replace lat and lon fields with unrounded values
+                           for plotting
+                        """
+
+                        data_avg = data_avg.astype("str")
+                        time_array = np.array(AMR_avg_list)[:, 0]
+                        try:
+                            t_middle = find_average_time(time_array,
+                                                         "%Y-%m-%d" +
+                                                         " %H%M%S.%f"
+                                                         )
+                        except KeyboardInterrupt:
+                            raise
+                        except:
+                            t_middle = np.nan
+                        data_avg = np.insert(data_avg, 0, t_middle)
+                        """add the average time in the measurement period
+                            to
+                            the start of the array
+                        """
+
+                        AMR_data = ""
+                        """reset data string"""
+                        for var in data_avg:
+                            AMR_data = AMR_data + str(var) + ","
+                        AMR_data = AMR_data[:-1]
+                        prep_data_string()
+                        """write data in averaging array to a string and
+                           use
+                           prep data to concatentate with the LGR data
+                           and
+                           write to the local copy of the remote plotting
+                           file
+                        """
+                        AMR_avg_list = []
+                        """reset aveeragign list"""
+                else:
+                    print("Sentences are missing")
+                    temp = []
 
 
 class LGR_Daemon(object):
@@ -573,56 +583,57 @@ class LGR_Daemon(object):
                 AMR_data = AMR_data + str(a) + ","
             AMR_data = AMR_data[:-1]
         while True:
-                LGR_str = str(LGR_ser.readline())[2:-1].split(",")[0:-7]
-                lgr_str = LGR_str[1:]
-                comp_time = str(dt.datetime.now(utc))
-                lgr_lst = []
-                for y in lgr_str:
-                    try:
-                        lgr_lst.append(float(y))
-                    except KeyboardInterrupt:
-                        raise
-                    except:
-                        lgr_lst.append(np.nan)
-                """above block converts string to floats and handles
-                   missing data fields
+            LGR_str = str(LGR_ser.readline())[2:-1].split(",")[0:-7]
+            lgr_str = LGR_str[1:]
+            comp_time = str(dt.datetime.now(utc))
+            lgr_lst = []
+            for y in lgr_str:
+                try:
+                    lgr_lst.append(float(y))
+                except KeyboardInterrupt:
+                    raise
+                except:
+                    lgr_lst.append(np.nan)
+            """above block converts string to floats and handles
+               missing data fields
+            """
+            try:
+                err = instrument_chk(lgr_lst[20], lgr_lst[22], lgr_lst[14])
+            except IndexError:
+                print("Missing Data String from LGR")
+                continue
+            """Do an instument check and ensure string output from LGR
+               includes all variables
+            """
+            if err != "":
+                err_log.write(err)
+                err_log.flush()
+            """local log write with instrument time and comp time
+               at measurement
+            """
+            LGR_t = LGR_str[0][2:]
+            lgr_lst.insert(0, LGR_t)
+            LGR_raw_data = ""
+            for var in lgr_lst:
+                LGR_raw_data = LGR_raw_data + str(var) + ","
+            LGR_raw_data = LGR_raw_data[1:-2]
+            LGR_local_log_file.write(LGR_raw_data + "," + comp_time.strip(",") +  "\r\n")
+            LGR_local_log_file.flush()
+            "above writes data to local log file for LGR"""
+            """once average list incluodes rigth number of measuremnts
+               we set LGR step to y and do an average
+            """
+            print("LGR data recieved")
+            LGR_avg_list.append(lgr_lst)
+            if len(LGR_avg_list) == avg_time:
+                LGR_local_step = "y"
+
+            if LGR_local_step == "y":
+                data_step = "y"
+                """above sets global data step to y and triggers amr daemon
+                   averaging
                 """
                 try:
-                    err = instrument_chk(lgr_lst[20], lgr_lst[22], lgr_lst[14])
-                except IndexError:
-                    print("Missing Data String from LGR")
-                    continue
-                """Do an instument check and ensure string output from LGR
-                   includes all variables
-                """
-                if err != "":
-                    err_log.write(err)
-                    err_log.flush()
-                """local log write with instrument time and comp time
-                   at measurement
-                """
-                LGR_t = LGR_str[0][2:]
-                lgr_lst.insert(0, LGR_t)
-                LGR_raw_data = ""
-                for var in lgr_lst:
-                    LGR_raw_data = LGR_raw_data + str(var) + ","
-                LGR_raw_data = LGR_raw_data[1:-2]
-                LGR_local_log_file.write(LGR_raw_data + "," + comp_time.strip(",") +  "\r\n")
-                LGR_local_log_file.flush()
-                "above writes data to local log file for LGR"""
-                """once average list incluodes rigth number of measuremnts
-                   we set LGR step to y and do an average
-                """
-                print("LGR data recieved")
-                LGR_avg_list.append(lgr_lst)
-                if len(LGR_avg_list) == avg_time:
-                    LGR_local_step = "y"
-
-                if LGR_local_step == "y":
-                    data_step = "y"
-                    """above sets global data step to y and triggers amr daemon
-                       averaging
-                    """
                     data_list = np.array(LGR_avg_list)[:, 1:].astype("f8")
                     time_array = np.array(LGR_avg_list)[:, 0]
                     t_middle = find_average_time(time_array,
@@ -638,18 +649,20 @@ class LGR_Daemon(object):
                                          data_avg[13], data_avg[3],
                                          ]
                                         )
-                    LGR_data = ""
-                    for var in data_avg:
-                        LGR_data = LGR_data + str(var) + ","
-                    LGR_data = LGR_data[:-1]
-                    LGR_avg_list = []
-                    """similar processing AMR daemon"""
-                    if AMR_ser == "":
-                        prep_data_string()
-                    """if AMR not attached then data prep done here, else it's
-                       by AMR Daemon"""
-                    LGR_local_step = "n"
-                    """reset LGR averaging stepp"""
+                except IndexError:
+                    data_avg = np.array([np.nan]*5)
+                LGR_data = ""
+                for var in data_avg:
+                    LGR_data = LGR_data + str(var) + ","
+                LGR_data = LGR_data[:-1]
+                LGR_avg_list = []
+                """similar processing AMR daemon"""
+                if AMR_ser == "":
+                    prep_data_string()
+                """if AMR not attached then data prep done here, else it's
+                   by AMR Daemon"""
+                LGR_local_step = "n"
+                """reset LGR averaging stepp"""
 
 
 
