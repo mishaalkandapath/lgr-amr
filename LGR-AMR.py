@@ -5,6 +5,7 @@ Created on Wed Jun 21 18:55:48 2017
 
 @author: sajjan, colin
 """
+import os
 import datetime as dt
 import numpy as np
 import socket
@@ -14,6 +15,7 @@ from serial import Serial
 from pytz import timezone
 from paramiko import SSHClient, AutoAddPolicy
 from time import sleep
+import subprocess
 """import necessary modules"""
 
 """set numpy print options so flaots printed in regular notation not scientific
@@ -22,6 +24,8 @@ np.set_printoptions(suppress=True)
 """create a pytz timezone for adjusting datetimes"""
 utc = timezone("UTC")
 
+"""Get a slack token from the environment variable"""
+slack_token = os.environ["SLACK_BOT_TOKEN"]
 
 """
 Section 1- Setup of Instrument and logging using in_file
@@ -79,11 +83,11 @@ def logging_setup(in_file):
 
 
 def instrument_setup(in_file):
-    """function defines isntrument settings based on infile"""
+    """function defines instrument settings based on infile"""
     """define global serial connections and averaging period"""
     global AMR_ser, LGR_ser, avg_time
     avg_time = int(in_file[10])
-    """try to conncet to AMR if set as being used in infile and
+    """try to connect to AMR if set as being used in infile and
        handle errors in connceting. If not using or can't find switch to an LGR
        only mode
     """
@@ -169,6 +173,15 @@ def prep_data_string():
                 )
     """print data string so user can know if code is working"""
     print(data_str)
+
+    """ check for nans to see if lgr and amr are working, if not write to slack"""
+    if "nan" in AMR_data and "nan" in LGR_data:
+        subprocess.run("sendmessage.sh 1 " + slack_token)
+    elif "nan" in AMR_data:
+        subprocess.run("sendmessage.sh 2 " + slack_token)
+    elif "nan" in LGR_data:
+        subprocess.run("sendmessage.sh 3 " + slack_token)
+
     """this blocks handles trying to write to the datafile if it's closed.
        We just reopen the file for appending if it's closed
        this can happen sometimes due to remote daemon clearing file and closing
@@ -228,7 +241,7 @@ def open_remote():
 
 
 class write_to_remote_Daemon(object):
-    """this class defines a remoe writing thread that attempts to write to
+    """this class defines a remote writing thread that attempts to write to
        the remote machine every remote write period and if this fails, it
        attempts to reconnect. it also sets the global network status after
        every write attempt
@@ -252,6 +265,8 @@ class write_to_remote_Daemon(object):
         global sftp, file_object
         global network_status
         global local_file_step, remote_data_str, local_cache_file
+
+        no_fails = 5 # number of times we try to write before we ping the slack
 
         while True:
                 sleep(int(in_file[11]))
@@ -299,7 +314,7 @@ class write_to_remote_Daemon(object):
                         print("Failure")
                         continue
                 elif network_status == "offline":
-                    """if network switch if offline then try to reconncet using
+                    """if network switch is offline then try to reconnect using
                        open remote function
                     """
                     try:
@@ -309,6 +324,7 @@ class write_to_remote_Daemon(object):
                         raise
                     except:
                         network_status = "offline"
+                        no_fails -= 1
                         print(network_status)
                         continue
 
