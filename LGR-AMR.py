@@ -16,6 +16,7 @@ from pytz import timezone
 from paramiko import SSHClient, AutoAddPolicy
 from time import sleep
 import subprocess
+import datetime as dt
 """import necessary modules"""
 
 #import slack api mods:
@@ -34,6 +35,7 @@ utc = timezone("UTC")
 
 """Get a slack token from the environment variable"""
 slack_token = os.environ["SLACK_BOT_TOKEN"]
+slack_time = None
 
 """
 Section 1- Setup of Instrument and logging using in_file
@@ -868,16 +870,23 @@ def instrument_chk(rd1i, rd2i, presi):
 
 #slack function stuff:
 def send_slack_message(text):
-    client = WebClient(token="")
-    try:
-        response = client.chat_postMessage(
-            channel="D03EGDT9WAF",
-            text=text
-        )
-        print("Sent slack message: ", response)
-    except SlackApiError as e:
-        # You will get a SlackApiError if "ok" is False
-        assert e.response["error"]    # str like 'invalid_auth', 'channel_not_found'
+    global slack_time
+    if slack_time is None or slack_time == "" or (dt.datetime.now() - slack_time).total_seconds > 5*60:
+        """send a message only every 5 minutes"""
+        client = WebClient(token="")
+        try:
+            response = client.chat_postMessage(
+                channel="D03EGDT9WAF",
+                text=text
+            )
+            print("Sent slack message: ", response)
+            if slack_time is None:
+                slack_time = "" #somethim might happen the first time
+            else:
+                slack_time = dt.datetime.now()
+        except SlackApiError as e:
+            # You will get a SlackApiError if "ok" is False
+            assert e.response["error"]    # str like 'invalid_auth', 'channel_not_found'
 
 """
 Main Function Call, starts all daemons and does setup
