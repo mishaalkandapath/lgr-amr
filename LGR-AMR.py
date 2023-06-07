@@ -185,13 +185,13 @@ def prep_data_string():
     """ check for nans to see if lgr and amr are working, if not write to slack"""
     if "nan" in AMR_data and "nan" in LGR_data:
         # subprocess.run("sendmessage.sh 1 " + slack_token)
-        send_slack_message("LGR & AMR Disconnected")
+        send_slack_message("LGR & AMR disconnected")
     elif "nan" in AMR_data:
         # subprocess.run("sendmessage.sh 2 " + slack_token)
-        send_slack_message("AMR Disconnected")
+        send_slack_message("AMR disconnected")
     elif "nan" in LGR_data:
         # subprocess.run("sendmessage.sh 3 " + slack_token)
-        send_slack_message("LGR Disconnected")
+        send_slack_message("LGR disconnected")
 
     """this blocks handles trying to write to the datafile if it's closed.
        We just reopen the file for appending if it's closed
@@ -446,7 +446,11 @@ class AMR_Daemon(object):
         """
         while True:
             """read line from com port and remove b''"""
-            amr_str = str(AMR_ser.readline())[2:-5]
+            try: #fails when port is removed sometimes
+                amr_str = str(AMR_ser.readline())[2:-5]
+            except:
+                send_slack_message("AMR disconnected")
+                continue
             """append data to the temp list"""
             temp.append(amr_str)
             """this if else block waits for temp to have right number of
@@ -741,6 +745,7 @@ class LGR_Daemon(object):
                 err = instrument_chk(lgr_lst[20], lgr_lst[22], lgr_lst[14])
             except IndexError:
                 print("Missing Data String from LGR")
+                send_slack_message("LGR Disconnected")
                 continue
             """if we have an error write it to a log"""
             if err != "":
@@ -770,7 +775,7 @@ class LGR_Daemon(object):
             """output so user knows data recived from LGR"""
             print("LGR data recieved")
             LGR_avg_list.append(lgr_lst)
-            """once average list include rigth number of measuremnts
+            """once average list include right number of measuremnts
                we set LGR step to y
             """
             if len(LGR_avg_list) == avg_time:
@@ -855,7 +860,7 @@ def instrument_chk(rd1i, rd2i, presi):
 
 #slack function stuff:
 def send_slack_message(text):
-    client = WebClient(token="xoxp-621216378947-3492470095890-5244901560325-096bae9ad1f37fd6aa9020919889afea")
+    client = WebClient(token="")
     try:
         response = client.chat_postMessage(
             channel="D03EGDT9WAF",
