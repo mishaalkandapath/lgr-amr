@@ -719,7 +719,11 @@ class LGR_Daemon(object):
         """
         while True:
             """read lgr string from serial port and split into a list"""
-            LGR_str = str(LGR_ser.readline())[2:-1].split(",")[0:-7]
+            try:
+                LGR_str = str(LGR_ser.readline())[2:-1].split(",")[0:-7]
+            except:
+                """need this to guarantee reconnect?"""
+                continue
             lgr_str = LGR_str[1:]
             """get computer timestamp for when string recived"""
             comp_time = str(dt.datetime.now(utc))
