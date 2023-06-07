@@ -18,6 +18,14 @@ from time import sleep
 import subprocess
 """import necessary modules"""
 
+#import slack api mods:
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
+import os
+from slack_sdk import WebClient
+from slack_sdk.errors import SlackApiError
+
 """set numpy print options so flaots printed in regular notation not scientific
 """
 np.set_printoptions(suppress=True)
@@ -176,11 +184,14 @@ def prep_data_string():
 
     """ check for nans to see if lgr and amr are working, if not write to slack"""
     if "nan" in AMR_data and "nan" in LGR_data:
-        subprocess.run("sendmessage.sh 1 " + slack_token)
+        # subprocess.run("sendmessage.sh 1 " + slack_token)
+        send_slack_message("LGR & AMR Disconnected")
     elif "nan" in AMR_data:
-        subprocess.run("sendmessage.sh 2 " + slack_token)
+        # subprocess.run("sendmessage.sh 2 " + slack_token)
+        send_slack_message("AMR Disconnected")
     elif "nan" in LGR_data:
-        subprocess.run("sendmessage.sh 3 " + slack_token)
+        # subprocess.run("sendmessage.sh 3 " + slack_token)
+        send_slack_message("LGR Disconnected")
 
     """this blocks handles trying to write to the datafile if it's closed.
        We just reopen the file for appending if it's closed
@@ -841,6 +852,19 @@ def instrument_chk(rd1i, rd2i, presi):
     if err != "":
         print(err)
     return err
+
+#slack function stuff:
+def send_slack_message(text):
+    client = WebClient(token="xoxp-621216378947-3492470095890-5244901560325-096bae9ad1f37fd6aa9020919889afea")
+    try:
+        response = client.chat_postMessage(
+            channel="D03EGDT9WAF",
+            text=text
+        )
+        print("Sent slack message: ", response)
+    except SlackApiError as e:
+        # You will get a SlackApiError if "ok" is False
+        assert e.response["error"]    # str like 'invalid_auth', 'channel_not_found'
 
 """
 Main Function Call, starts all daemons and does setup
