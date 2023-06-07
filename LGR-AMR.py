@@ -723,6 +723,10 @@ class LGR_Daemon(object):
                 LGR_str = str(LGR_ser.readline())[2:-1].split(",")[0:-7]
             except:
                 """need this to guarantee reconnect?"""
+                in_file = [x.rstrip() for x in
+               open("./lgr_amr.infile", mode="r").readlines() if x[0] != "#"
+               ]
+                instrument_setup(in_file)
                 continue
             lgr_str = LGR_str[1:]
             """get computer timestamp for when string recived"""
